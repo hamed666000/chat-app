@@ -402,5 +402,80 @@ namespace Client
                 keyTextBox.PasswordChar = '*';
             }
         }
+
+        private void Client_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void versionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addrTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void keyLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void keyTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usernameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usernameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sendLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sendTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void portLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void localaddrLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void portTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

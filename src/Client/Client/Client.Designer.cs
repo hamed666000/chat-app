@@ -44,6 +44,7 @@
             this.addrTextBox = new System.Windows.Forms.TextBox();
             this.versionLabel = new System.Windows.Forms.Label();
             this.checkBox = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // connectButton
@@ -67,6 +68,7 @@
             this.portLabel.Size = new System.Drawing.Size(29, 13);
             this.portLabel.TabIndex = 27;
             this.portLabel.Text = "Port:";
+            this.portLabel.Click += new System.EventHandler(this.portLabel_Click);
             // 
             // localaddrLabel
             // 
@@ -77,6 +79,7 @@
             this.localaddrLabel.Size = new System.Drawing.Size(48, 13);
             this.localaddrLabel.TabIndex = 26;
             this.localaddrLabel.Text = "Address:";
+            this.localaddrLabel.Click += new System.EventHandler(this.localaddrLabel_Click);
             // 
             // portTextBox
             // 
@@ -89,6 +92,7 @@
             this.portTextBox.TabStop = false;
             this.portTextBox.Text = "9000";
             this.portTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.portTextBox.TextChanged += new System.EventHandler(this.portTextBox_TextChanged);
             // 
             // logLabel
             // 
@@ -99,6 +103,7 @@
             this.logLabel.Size = new System.Drawing.Size(25, 13);
             this.logLabel.TabIndex = 31;
             this.logLabel.Text = "Log";
+            this.logLabel.Click += new System.EventHandler(this.logLabel_Click);
             // 
             // logTextBox
             // 
@@ -112,6 +117,7 @@
             this.logTextBox.Size = new System.Drawing.Size(568, 301);
             this.logTextBox.TabIndex = 30;
             this.logTextBox.TabStop = false;
+            this.logTextBox.TextChanged += new System.EventHandler(this.logTextBox_TextChanged);
             // 
             // sendLabel
             // 
@@ -122,6 +128,7 @@
             this.sendLabel.Size = new System.Drawing.Size(32, 13);
             this.sendLabel.TabIndex = 33;
             this.sendLabel.Text = "Send";
+            this.sendLabel.Click += new System.EventHandler(this.sendLabel_Click);
             // 
             // sendTextBox
             // 
@@ -132,6 +139,7 @@
             this.sendTextBox.Size = new System.Drawing.Size(568, 20);
             this.sendTextBox.TabIndex = 32;
             this.sendTextBox.TabStop = false;
+            this.sendTextBox.TextChanged += new System.EventHandler(this.sendTextBox_TextChanged);
             this.sendTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SendTextBox_KeyDown);
             // 
             // clearButton
@@ -155,6 +163,7 @@
             this.usernameLabel.Size = new System.Drawing.Size(58, 13);
             this.usernameLabel.TabIndex = 36;
             this.usernameLabel.Text = "Username:";
+            this.usernameLabel.Click += new System.EventHandler(this.usernameLabel_Click);
             // 
             // usernameTextBox
             // 
@@ -167,6 +176,7 @@
             this.usernameTextBox.TabStop = false;
             this.usernameTextBox.Text = "Client";
             this.usernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // keyLabel
             // 
@@ -177,6 +187,7 @@
             this.keyLabel.Size = new System.Drawing.Size(28, 13);
             this.keyLabel.TabIndex = 38;
             this.keyLabel.Text = "Key:";
+            this.keyLabel.Click += new System.EventHandler(this.keyLabel_Click);
             // 
             // keyTextBox
             // 
@@ -188,6 +199,7 @@
             this.keyTextBox.TabIndex = 37;
             this.keyTextBox.TabStop = false;
             this.keyTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.keyTextBox.TextChanged += new System.EventHandler(this.keyTextBox_TextChanged);
             // 
             // addrTextBox
             // 
@@ -201,6 +213,7 @@
             this.addrTextBox.TabStop = false;
             this.addrTextBox.Text = "127.0.0.1";
             this.addrTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.addrTextBox.TextChanged += new System.EventHandler(this.addrTextBox_TextChanged);
             // 
             // versionLabel
             // 
@@ -211,6 +224,7 @@
             this.versionLabel.Size = new System.Drawing.Size(28, 13);
             this.versionLabel.TabIndex = 40;
             this.versionLabel.Text = "v1.5";
+            this.versionLabel.Click += new System.EventHandler(this.versionLabel_Click);
             // 
             // checkBox
             // 
@@ -224,10 +238,21 @@
             this.checkBox.UseVisualStyleBackColor = true;
             this.checkBox.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 71);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Client
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(594, 501);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox);
             this.Controls.Add(this.versionLabel);
             this.Controls.Add(this.addrTextBox);
@@ -252,6 +277,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Client_FormClosing);
+            this.Load += new System.EventHandler(this.Client_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,6 +301,7 @@
         private System.Windows.Forms.TextBox addrTextBox;
         private System.Windows.Forms.Label versionLabel;
         private System.Windows.Forms.CheckBox checkBox;
+        private System.Windows.Forms.Button button1;
     }
 }
 
